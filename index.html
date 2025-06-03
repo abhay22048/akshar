@@ -22,6 +22,149 @@
 		<link href="css/tiny-slider.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<title>Akshar Enterprise  </title>
+		<style>
+			/* Hero Section Styling */
+.hero-section {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #433a7d, #433a7d );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #f1f1f1;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  width: 100%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 550px;
+  /* background: rgba(255, 255, 255, 0.08); */
+  padding: 90px;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  /* box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); */
+  color: #ffffff;
+  margin-bottom: 100px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.hero-text h1 span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #d1d1f1;
+}
+
+.hero-text .quote {
+  font-size: 1rem;
+  font-style: italic;
+  color: #c3c3e5;
+  margin-bottom: 25px;
+}
+
+
+
+.hero-btn:hover {
+  background-color: #3e8e41;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+  margin-bottom: 100px;
+}
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .hero-text {
+    padding: 60px 30px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text h1 span {
+    font-size: 1.25rem;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-image img {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    padding: 40px 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text h1 span {
+    font-size: 1.1rem;
+  }
+
+  .hero-image img {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-text h1 span {
+    font-size: 1rem;
+  }
+
+  .hero-text .quote {
+    font-size: 0.9rem;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+}
+
+		</style>
 	</head>
 
 	<body>
@@ -54,25 +197,21 @@
   <!-- End Header/Navigation -->
 
   <!-- Start Hero Section -->
-  <div class="hero">
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-lg-5">
-          <div class="intro-excerpt">
-			<h1>Modern Interior <span class="d-block">In the joy of others lies our own </span></h1>
-            <p class="mb-4">-Param pujya Pramukhswami Maharaj</p>
-            <p><a href="shop.html" class="btn btn-secondary me-2">Products</a></p>
-          </div>
-        </div>
-        <div class="col-lg-7">
-          <div class="hero-img-wrap">
-            <img src="images/home-removebg-preview.png" class="img-fluid">
-          </div>
-        </div>
-      </div>
+<section class="hero-section">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>
+        <span>In the joy of others lies our own</span>
+      </h1>
+      <p class="quote">- Param Pujya Pramukhswami Maharaj</p>
+    </div>
+    <div class="hero-image">
+      <img src="images/home-removebg-preview.png" alt="Interior" />
     </div>
   </div>
-  <!-- End Hero Section -->
+</section>
+<!-- End Hero Section -->
+
 
   <!-- Start Product Section -->
   <div class="product-section">
@@ -181,8 +320,8 @@
 									<div class="icon">
 										<img src="images/truck.svg" alt="Image" class="imf-fluid">
 									</div>
-									<h3>Fast &amp; Free Shipping</h3>
-									<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+									<h3>Fast Shipping</h3>
+									<!-- <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p> -->
 								</div>
 							</div>
 
@@ -192,7 +331,7 @@
 										<img src="images/bag.svg" alt="Image" class="imf-fluid">
 									</div>
 									<h3>Easy to Shop</h3>
-									<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+									<!-- <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p> -->
 								</div>
 							</div>
 
@@ -202,7 +341,7 @@
 										<img src="images/support.svg" alt="Image" class="imf-fluid">
 									</div>
 									<h3>24/7 Support</h3>
-									<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+									<!-- <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p> -->
 								</div>
 							</div>
 
@@ -212,7 +351,7 @@
 										<img src="images/return.svg" alt="Image" class="imf-fluid">
 									</div>
 									<h3>Hassle Free Returns</h3>
-									<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+									<!-- <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p> -->
 								</div>
 							</div>
 
@@ -238,17 +377,34 @@
 						<div class="imgs-grid">
 							<div class="grid grid-1"><img src="images/img-grid-1.jpg" alt="Untree.co"></div>
 							<div class="grid grid-2"><img src="images/img-grid-2.jpg" alt="Untree.co"></div>
-							<div class="grid grid-3"><img src="images/img-grid-3.jpg" alt="Untree.co"></div>
+							<div class="grid grid-3"><img src="images/walldesign.jpg" alt="Untree.co"></div>
 						</div>
 					</div>
 					<div class="col-lg-5 ps-lg-5">
 						<h2 class="section-title mb-4">We Help You Make Modern Interior Design</h2>
-						<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+						<p>Super Ajanta Chemicals is a reputed manufacturer and exporter of specialty chemicals and compounds,
+							 which form an important ingredient for varying industrial units.
+							<br>
+						Super Ajanta Chemicals is one of the leading manufacturing and supplying organization, 
+						dealing with the production of Construction Chemicals, Specially Chemicals, and allied Products. 
+						Our organization has Proved itself as a consistent supplier of uncompromising quality products. </p>
 
-						<ul class="list-unstyled custom-list my-4">
-							<li>Donec vitae odio quis nisl dapibus malesuada</li>
-							<li>Donec vitae odio quis nisl dapibus malesuada</li>
-							<li>Donec vitae odio quis nisl dapibus malesuada</li>
+						<p>We offer a wide range of Construction Chemicals products all around the market. We are supported with
+							 a team of highly experienced professionals who help us in offering qualitative range of products to our 
+							 clients. Our ranges include Wall Putty, Concrete admixture, Surface treatment, Grouts and industrial Flooring Product,
+							  Structure repair products, Adhesive and bonding agents designed to bond or fix a construction material and speciality 
+							  allied products. 
+
+							<br><br>
+						We provide the customization facility and provide the products on high quality bases. <b>We are accredited as ISO 9001: 2008 
+						certified company by NABCB.</b> We maintain high standards in the quality of the products. Our products are safely packaged to ensure 
+						that these products are free from damage while transferring. Our range of construction chemicals is exclusively used in the civil 
+						engineering industry. Our list of customers already includes many prestigious Governments, Semi Government, Private Institutions, 
+						Builders, and Contractors etc. Also, we conduct quality testing of the products based on stringent parameters 
+						and various testing parameters to ensure the quality consistency and performance of the products. </p>
+							 
+
+						
 						
 					</div>
 				</div>
@@ -284,12 +440,12 @@
 
 											<div class="testimonial-block text-center">
 												<blockquote class="mb-5">
-													<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
+													<p>&ldquo;I recently purchased a notched trowel from Super Ajanta. What really impressed me, though, was the customer service. The team was responsive, answered all my questions about trowel size for my project, and even followed up to ensure everything went smoothly. Shipping was quick and the tool arrived well-packaged with clear usage instructions.&rdquo;</p>
 												</blockquote>
 
 												<div class="author-info">
 													<div class="author-pic">
-														<img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+														<img src="images/jj.png" alt="Maria Jones" class="img-fluid">
 													</div>
 													<h3 class="font-weight-bold">Maria Jones</h3>
 													<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
@@ -307,12 +463,12 @@
 
 											<div class="testimonial-block text-center">
 												<blockquote class="mb-5">
-													<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
+													<p>&ldquo;I used these tile spacers for a recent Project & renovation, and they were a game changer. The spacers were sturdy, uniform in size, and didn’t compress under pressure, which made it easy to get clean, consistent grout lines across the entire surface.&rdquo;</p>
 												</blockquote>
 
 												<div class="author-info">
 													<div class="author-pic">
-														<img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+														<img src="images/Adhezo New Logo.jpg" alt="Maria Jones" class="img-fluid">
 													</div>
 													<h3 class="font-weight-bold">Maria Jones</h3>
 													<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
@@ -362,30 +518,13 @@
 		<footer class="footer-section">
 			<div class="container relative">
 
-				<div class="sofa-img">
-					<img src="images/sofa.png" alt="Image" class="img-fluid">
+				<div class="sofa-img d-none d-sm-block">
+					<img src="images/footerimg.png" alt="Image" class="img-fluid">
 				</div>
 
 				<div class="row">
-					<div class="col-lg-8">
-						<div class="subscription-form">
-							<h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg" alt="Image" class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
-
-							<form action="#" class="row g-3">
-								<div class="col-auto">
-									<input type="text" class="form-control" placeholder="Enter your name">
-								</div>
-								<div class="col-auto">
-									<input type="email" class="form-control" placeholder="Enter your email">
-								</div>
-								<div class="col-auto">
-									<button class="btn btn-primary">
-										<span class="fa fa-paper-plane"></span>
-									</button>
-								</div>
-							</form>
-
-						</div>
+					<div class="col-lg-8 d-flex align-items-center justify-content-start mb-4">
+						<img src="images/LOGO [ajanta R].jpeg.jpg" alt="Akshar Enterprise Logo" style="max-height: 80px; width: auto;">
 					</div>
 				</div>
 
@@ -420,26 +559,26 @@
 
 							<div class="col-6 col-sm-6 col-md-3">
 								<ul class="list-unstyled">
-									<li><a href="#">Support</a></li>
-									<li><a href="#">Knowledge base</a></li>
-									<li><a href="#">Live chat</a></li>
+									<li><a href="#">Tile Adhesive</a></li>
+									<li><a href="#">Tile Spacer</a></li>
+									<li><a href="#">Notched Trowel</a></li>
 								</ul>
 							</div>
 
 							<div class="col-6 col-sm-6 col-md-3">
 								<ul class="list-unstyled">
-									<li><a href="#">Jobs</a></li>
-									<li><a href="#">Our team</a></li>
-									<li><a href="#">Leadership</a></li>
-									<li><a href="#">Privacy Policy</a></li>
+									<li><a href="#">Wall Putty</a></li>
+									<li><a href="#">Waterproffing</a></li>
+									<li><a href="#">Epoxy Grout</a></li>
+									<li><a href="#">Hardner</a></li>
 								</ul>
 							</div>
 
 							<div class="col-6 col-sm-6 col-md-3">
 								<ul class="list-unstyled">
-									<li><a href="#">Nordic Chair</a></li>
-									<li><a href="#">Kruzo Aero</a></li>
-									<li><a href="#">Ergonomic Chair</a></li>
+									<li><a href="#">Jack Levellar</a></li>
+									<li><a href="#">Hammar</a></li>
+									<li><a href="#">Liftter</a></li>
 								</ul>
 							</div>
 						</div>
@@ -448,18 +587,12 @@
 				</div>
 
 				<div class="border-top copyright">
-							<p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a>  <!-- License information: https://untree.co/license/ -->
+							<p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;  Akshar Enterprise<!-- License information: https://untree.co/license/ -->
 			</p>
-							<p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a> Distributed By <a hreff="https://themewagon.com">ThemeWagon</a>  <!-- License information: https://untree.co/license/ -->
-            </p>
+							
 						</div>
 
-						<div class="col-lg-6 text-center text-lg-end">
-							<ul class="list-unstyled d-inline-flex ms-auto">
-								<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
-								<li><a href="#">Privacy Policy</a></li>
-							</ul>
-						</div>
+						
 
 					</div>
 				</div>

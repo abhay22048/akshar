@@ -438,7 +438,7 @@ a {
       content: "";
       width: 255px;
       height: 217px;
-      background-image: url("../images/dots-yellow.svg");
+      /* background-image: url("../images/dots-yellow.svg"); */
       background-repeat: no-repeat;
       background-size: contain;
       -webkit-transform: translate(-40%, -40%);
@@ -484,7 +484,7 @@ a {
       content: "";
       width: 255px;
       height: 217px;
-      background-image: url("../images/dots-green.svg");
+      /* background-image: url("../images/dots-green.svg"); */
       background-size: contain;
       background-repeat: no-repeat;
       -webkit-transform: translate(-40%, -40%);
@@ -747,7 +747,7 @@ a {
     z-index: 1;
     right: 0; }
     .footer-section .sofa-img img {
-      max-width: 380px; }
+      max-width: 223px; }
   .footer-section .links-wrap {
     margin-top: 0px; }
     @media (min-width: 992px) {

@@ -82,7 +82,7 @@ if (isset($_GET['action']) && $_GET['action'] === 'logout') {
     <script>
         // Check if already logged in
         if (localStorage.getItem('username')) {
-            window.location.href = 'admin-panel.html';
+            window.location.href = 'admin.html';
         }
 
         document.getElementById('login-form').addEventListener('submit', async function(e) {
@@ -106,7 +106,7 @@ if (isset($_GET['action']) && $_GET['action'] === 'logout') {
                 if (data.success) {
                     // Store credentials in localStorage
                     localStorage.setItem('username', username);
-                    window.location.href = 'admin-panel.html';
+                    window.location.href = 'admin.html';
                 } else {
                     errorMessage.textContent = data.message;
                     errorMessage.style.display = 'block';
