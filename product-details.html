@@ -751,22 +751,23 @@
     }
 
     // WhatsApp Enquiry Button
-    function sendEnquiry(name, description, imagePath, price) {
-      const phone = "9709226079";
-      const website = window.location.origin;
-      const imageURL = imagePath.startsWith('http') ? imagePath : `${website}/${imagePath}`;
-      
-      const message = `*Product Enquiry from ${website}*\n\n` +
-                     `*Product:* ${name}\n` +
-                     `*Description:* ${description || 'N/A'}\n` +
-                     `*Price:* ₹${price}\n` +
-                     `*Image:* ${imageURL}\n\n` +
-                     `I'm interested in this product. Please provide more information.`;
-      
-      const encodedMessage = encodeURIComponent(message);
-      const waLink = `https://wa.me/${phone}?text=${encodedMessage}`;
-      window.open(waLink, '_blank');
-    }
+   // Modified WhatsApp enquiry function
+function sendEnquiry(name, description, imagePath, price) {
+  const phone = "9709226079"; // Your WhatsApp number
+  const website = window.location.origin;
+  const imageURL = imagePath.startsWith('http') ? imagePath : `${website}/${imagePath}`;
+  
+  const message = `📦 *Product Enquiry*\n\n` +
+                 `🛍️ *Name:* ${name}\n` +
+                 `📝 *Description:* ${description || 'N/A'}\n` +
+                 `💰 *Price:* ₹${price}\n` +
+                 `🖼️ *Image:* ${imageURL}\n\n` +
+                 `I'd like to know more about this product.`;
+  
+  const encodedMessage = encodeURIComponent(message);
+  const waLink = `https://wa.me/${phone}?text=${encodedMessage}`;
+  window.open(waLink, '_blank');
+}
 
     // Load product details and related products from XLSX
     document.addEventListener('DOMContentLoaded', function () {
