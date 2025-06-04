@@ -79,7 +79,22 @@
       </div>
     </div>
   </div>
-
+  <script>
+    // Delegate click event to product cards for navigation
+    document.addEventListener('click', function (e) {
+      const productLink = e.target.closest('.product-item-link');
+      if (productLink) {
+        // Prevent default only if the click is not on the "Enquire Now" button or "read more" link
+        if (
+          !e.target.classList.contains('enquiry-button') &&
+          !e.target.classList.contains('read-more')
+        ) {
+          window.location.href = productLink.getAttribute('href');
+          e.preventDefault();
+        }
+      }
+    });
+  </script>
   <!-- Description Modal -->
   <div id="description-modal" class="modal">
     <div class="modal-content">
@@ -212,7 +227,7 @@
 
     // WhatsApp enquiry function
     function sendEnquiry(name, description, imagePath) {
-      const phone = "9709226079"; // Your WhatsApp number
+      const phone = "9662790002"; // Your WhatsApp number
       const website = window.location.origin;
       const imageURL = `${website}/${imagePath}`;
       const message = `📦 *Product Enquiry*\n\n🛍️ *Name:* ${name}\n📝 *Description:* ${description}\n🖼️ *Image:* ${imageURL}\n\nI'd like to know more about this product.`;
@@ -246,11 +261,12 @@
 
 						</p>
 
+						
 						<ul class="list-unstyled custom-social">
-							<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+							<li><a href="https://www.instagram.com/superajanta_/"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+							<!-- <li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li> -->
+							<li><a href="https://www.instagram.com/superajanta_/"><span class="fa fa-brands fa-instagram"></span></a></li>
+							<!-- <li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li> -->
 						</ul>
 					</div>
 
